@@ -1,0 +1,205 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+nav {
+    background-color: rgb(49, 49, 49);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list-max-size {
+    display: none;
+}
+
+.nav-list-items-max-size {
+    color: gray;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list-items>i {
+    color: white;
+    cursor: pointer;
+}
+
+.first-section {
+    font-family: 'Roboto', sans-serif;
+}
+
+.first-section>p {
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.unit-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine";
+}
+
+.products {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.products:nth-child(1) {
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_small_2x.jpg");
+    grid-area: one;
+}
+
+.products:nth-child(2) {
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_small.jpg");
+    justify-content: center;
+    grid-area: two;
+}
+
+.valent-text {
+    font-size: 2rem;
+}
+
+.products:nth-child(3) {
+    color: rgb(96, 45, 98);
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_medium_2x.jpg");
+    grid-area: three;
+}
+
+.products:nth-child(4) {
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_medium_2x.jpg");
+    grid-area: four;
+}
+
+.watch-text {
+    font-size: 20px;
+}
+
+.products:nth-child(5) {
+    grid-area: five;
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/shot-on-iphone/tile_soip__f0c6lef982em_small_2x.jpg");
+}
+
+.products:nth-child(6) {
+    grid-area: six;
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-heart-month/promo_watch_heart__dlf8uc5h0kae_small_2x.jpg");
+}
+
+.products:nth-child(7) {
+    grid-area: seven;
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-black-unity/promo_watch__fo7j0tnywi2q_small_2x.jpg");
+}
+
+.white-font {
+    color: white;
+}
+
+.products:nth-child(8) {
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/apple-card/tile__cauwwcyyn9hy_small_2x.jpg");
+    grid-area: eight;
+}
+
+.products:nth-child(9) {
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/tv-plus-the-sky-is-everywhere/promo_sky__fu99g2ymabiy_small_2x.jpg");
+    grid-area: nine;
+}
+
+.curve-font {
+    font-family: 'Festive', cursive;
+}
+
+.info {
+    font-weight: lighter;
+    padding: 20px;
+}
+
+.info>p {
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+.info>p>a {
+    color: black;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.filter-items {
+    margin-top: 20px;
+    opacity: 0.7;
+    border-bottom: gray solid 1px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    opacity: 0.7;
+    padding: 20px;
+}
+
+.footer-text>h6 {
+    margin-top: 10px;
+}
+
+.footer-text>h6>a {
+    color: blue;
+}
+
+.footer-text>p {
+    margin-top: 10px;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.footer-items {
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 774px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-list-max-size {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .unit-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "one one" "two two" "three three" "four five" "six seven" "eight nine";
+    }
+}
